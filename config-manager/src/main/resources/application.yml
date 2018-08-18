@@ -1,0 +1,17 @@
+server:
+  port: 8888
+  
+spring:
+  application:
+    name: config-manager
+  security:
+    user:
+      name: admin
+      password: mules0ft
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.houston.softwaregrp.net/Software-Transformation/mule-integ-config
+          force-pull: true
+
